@@ -1,0 +1,65 @@
+table dCalendario
+	lineageTag: 6eb70000-2b15-4b8d-87d6-07a7b7c69b53
+
+	column Date
+		formatString: General Date
+		lineageTag: 796a3f0c-2ce6-4f96-aa5a-9e73c0dd610f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano
+		formatString: 0
+		lineageTag: b05993bc-3fc8-4d47-947b-f4cad4325f07
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MesNumero
+		formatString: 0
+		lineageTag: a8c81cc6-6a0b-43f7-84f2-a74fe278592a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MesNumero]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MesNome
+		lineageTag: 527ede34-5631-4005-be7b-f27898f07f25
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MesNome]
+
+		annotation SummarizationSetBy = Automatic
+
+	column AnoMes
+		lineageTag: 8fc649f6-b6f8-4dd9-b468-62f5764bf45d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [AnoMes]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dCalendario = calculated
+		mode: import
+		source = ```
+				
+				ADDCOLUMNS (
+				    CALENDAR (
+				        MIN ( fDemandas[DataAbertura] ),
+				        MAX ( fDemandas[DataAbertura] )
+				    ),
+				    "Ano", YEAR ( [Date] ),
+				    "MesNumero", MONTH ( [Date] ),
+				    "MesNome", FORMAT ( [Date], "MMM" ),
+				    "AnoMes", FORMAT ( [Date], "YYYY-MM" )
+				)
+				
+				```
+
+	annotation PBI_Id = d4583896f18745d185fbc4971b49482a
+

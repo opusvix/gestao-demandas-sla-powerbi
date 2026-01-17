@@ -1,0 +1,130 @@
+table _Medidas
+	lineageTag: 657e9cdd-e3c7-4c08-99cc-a4cd038c34cb
+
+	measure 'Total Demandas' = ```
+			
+			COUNTROWS ( fDemandas )
+			
+			```
+		formatString: 0
+		displayFolder: Básicas
+		lineageTag: ed8566b9-e043-4e6c-94d6-9bb90864b343
+
+	measure 'Demandas Concluidas' = ```
+			
+			CALCULATE (
+			    COUNTROWS ( fDemandas ),
+			    fDemandas[Status] = "Concluída"
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Básicas
+		lineageTag: c5e48bbc-faac-4d37-83ee-504092d5ae56
+
+	measure 'Demandas em Aberto' = ```
+			
+			CALCULATE (
+			    COUNTROWS ( fDemandas ),
+			    fDemandas[Status] <> "Concluída"
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Básicas
+		lineageTag: 716a7081-c6e3-4b2f-917c-d3bd683629b4
+
+	measure 'Lead Time (Dias)' = ```
+			
+			AVERAGEX (
+			    FILTER (
+			        fDemandas,
+			        NOT ISBLANK ( fDemandas[DataConclusao] )
+			    ),
+			    DATEDIFF (
+			        fDemandas[DataAbertura],
+			        fDemandas[DataConclusao],
+			        DAY
+			    )
+			)
+			
+			```
+		displayFolder: Lead Time
+		lineageTag: 4516c27b-a5a8-490c-9bd8-5a52a9063a19
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Demandas Dentro SLA' = ```
+			
+			CALCULATE (
+			    COUNTROWS ( fDemandas ),
+			    FILTER (
+			        fDemandas,
+			        NOT ISBLANK ( fDemandas[DataConclusao] )
+			            && DATEDIFF (
+			                fDemandas[DataAbertura],
+			                fDemandas[DataConclusao],
+			                DAY
+			            ) <= fDemandas[SLA_Dias]
+			    )
+			)
+			
+			```
+		formatString: 0
+		displayFolder: SLA
+		lineageTag: 3187a188-4093-41e5-89fd-540271f02dfe
+
+	measure '% Cumprimento SLA' = ```
+			
+			DIVIDE (
+			    [Demandas Dentro SLA],
+			    [Demandas Concluidas]
+			)
+			
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: SLA
+		lineageTag: 7cd3461a-0843-47fe-a0fd-549ba375a862
+
+	measure 'Demandas Atrasadas' = ```
+			
+			CALCULATE (
+			    COUNTROWS ( fDemandas ),
+			    FILTER (
+			        fDemandas,
+			        fDemandas[Status] <> "Concluída"
+			            && TODAY () - fDemandas[DataAbertura] > fDemandas[SLA_Dias]
+			    )
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Backlog e Atraso
+		lineageTag: 3a1020d9-3e3a-491a-8660-1c756d6acd08
+
+	measure 'Demandas Concluidas Periodo' = ```
+			
+			CALCULATE (
+			    [Demandas Concluidas],
+			    USERELATIONSHIP (
+			        dCalendario[Date],
+			        fDemandas[DataConclusao]
+			    )
+			)
+			
+			```
+		displayFolder: Produtividade Mensal
+		lineageTag: 45c88a42-9dee-4806-8c00-68c3c5474ec8
+
+	partition _Medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Coluna 1"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+

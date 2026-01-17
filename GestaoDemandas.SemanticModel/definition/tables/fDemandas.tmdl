@@ -1,0 +1,144 @@
+table fDemandas
+	lineageTag: 1f79e769-e9b0-474c-89b1-016b24f206e8
+
+	column DescricaoDemanda
+		dataType: string
+		lineageTag: 1e85ecf8-d2a3-43f7-94ae-c409050a6500
+		summarizeBy: none
+		sourceColumn: DescricaoDemanda
+
+		annotation SummarizationSetBy = Automatic
+
+	column DataAbertura
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 6e9a1bef-9037-4224-a9ec-38514faa463d
+		summarizeBy: none
+		sourceColumn: DataAbertura
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DataConclusao
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 52ec75f8-27b4-4714-af01-b91aa0eafaa6
+		summarizeBy: none
+		sourceColumn: DataConclusao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Status
+		dataType: string
+		lineageTag: e24a0e72-29c6-4096-bc7b-56ccd2549043
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Prioridade
+		dataType: string
+		lineageTag: 595f2c56-d2f9-43df-8e52-6145557ec128
+		summarizeBy: none
+		sourceColumn: Prioridade
+
+		annotation SummarizationSetBy = Automatic
+
+	column SLA_Dias
+		dataType: int64
+		formatString: 0
+		lineageTag: ec0ff6f5-cf8a-4616-9457-4d8397bd88af
+		summarizeBy: sum
+		sourceColumn: SLA_Dias
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categoria
+		dataType: string
+		lineageTag: 1e292b8e-d074-4d53-90ff-7b461c208f7d
+		summarizeBy: none
+		sourceColumn: Categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_Demanda
+		dataType: int64
+		formatString: 0
+		lineageTag: b3159533-239e-4992-bf17-7a60e82f3a4e
+		summarizeBy: sum
+		sourceColumn: ID_Demanda
+
+		annotation SummarizationSetBy = Automatic
+
+	column TituloDemanda
+		dataType: string
+		lineageTag: 9bb3557e-dd1f-438d-9877-50f84fd28803
+		summarizeBy: none
+		sourceColumn: TituloDemanda
+
+		annotation SummarizationSetBy = Automatic
+
+	column Area
+		dataType: string
+		lineageTag: df5e866a-c274-4b90-8b15-b1779077bd41
+		summarizeBy: none
+		sourceColumn: Area
+
+		annotation SummarizationSetBy = Automatic
+
+	column TipoDemanda
+		dataType: string
+		lineageTag: a5b52db7-cde9-49e9-9392-2cf61ab38079
+		summarizeBy: none
+		sourceColumn: TipoDemanda
+
+		annotation SummarizationSetBy = Automatic
+
+	column Observacoes
+		dataType: string
+		lineageTag: a6b3bb31-9b2b-44f1-a621-54df99161ea1
+		summarizeBy: none
+		sourceColumn: Observacoes
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID
+		dataType: int64
+		formatString: 0
+		lineageTag: a0b273bb-35d9-4ef6-9845-cd9ee0a6bfaa
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Responsavel
+		dataType: string
+		lineageTag: 220632b9-33e1-4eb7-8fd0-95b3cb1f3442
+		summarizeBy: none
+		sourceColumn: Responsavel
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fDemandas = m
+		mode: import
+		source =
+				let
+				    Fonte = SharePoint.Tables("https://vtxcy.sharepoint.com/sites/GestaoDemandasBI", [Implementation="2.0", ViewMode="All"]),
+				    #"4d02f7b4-ee2e-4e2a-9b13-8cf10b88c25d" = Fonte{[Id="4d02f7b4-ee2e-4e2a-9b13-8cf10b88c25d"]}[Items],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"4d02f7b4-ee2e-4e2a-9b13-8cf10b88c25d",{{"DescricaoDemanda", type text}, {"DataAbertura", type date}, {"DataConclusao", type date}, {"SLA_Dias", Int64.Type}, {"ID_Demanda", Int64.Type}, {"ID", Int64.Type}, {"Tipo de Conteúdo", type text}, {"Modificado", type date}, {"Criado", type date}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Aplicativo Criado por", "Aplicativo Modificado por", "O item é um Registro", "Rótulo aplicado por", "Rótulo de retenção Aplicado", "Rótulo de retenção", "Configuração do rótulo", "Contagem de Elementos Filho da Pasta", "Contagem de Itens Filhos", "Tipo", "Editar", "Anexos", "Versão", "Modificado por", "Criado por", "Criado", "Modificado", "Tipo de Conteúdo", "ID de Ativo de Conformidade", "Pressione Delete para excluir o ícone."}),
+				    #"Colunas Reordenadas" = Table.ReorderColumns(#"Colunas Removidas",{"ID", "DescricaoDemanda", "DataAbertura", "DataConclusao", "Status", "Prioridade", "Categoria", "SLA_Dias", "Responsavel", "ID_Demanda", "TituloDemanda", "Area", "TipoDemanda", "Observacoes"}),
+				    #"Responsavel Expandido" = Table.ExpandListColumn(#"Colunas Reordenadas", "Responsavel"),
+				    #"Responsavel Expandido1" = Table.ExpandRecordColumn(#"Responsavel Expandido", "Responsavel", {"title"}, {"title"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Responsavel Expandido1",{{"title", type text}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado1",{{"title", "Responsavel"}})
+				in
+				    #"Colunas Renomeadas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

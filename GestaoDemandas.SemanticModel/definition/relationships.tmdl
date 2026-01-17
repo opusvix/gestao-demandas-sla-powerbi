@@ -1,0 +1,9 @@
+relationship 2a37b3ae-16d8-665b-f3fd-dcbf80af7c97
+	fromColumn: fDemandas.DataAbertura
+	toColumn: dCalendario.Date
+
+relationship fac47786-f124-f608-310b-86db839ffa5a
+	isActive: false
+	fromColumn: fDemandas.DataConclusao
+	toColumn: dCalendario.Date
+

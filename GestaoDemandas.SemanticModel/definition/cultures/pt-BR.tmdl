@@ -1,0 +1,2216 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "f_demanda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "f demanda": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fDemandas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_demanda.descricao_demanda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "DescricaoDemanda"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descricao demanda": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DescricaoDemanda": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Descrição da Demanda": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "f_demanda.data_abertura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "DataAbertura"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data abertura": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DataAbertura": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Data de Abertura": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_demanda.data_conclusao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "DataConclusao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data conclusao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DataConclusao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information conclusao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact conclusao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info conclusao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic conclusao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document conclusao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure conclusao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record conclusao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Data de Conclusão": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_demanda.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "f_demanda.prioridade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "Prioridade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prioridade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_demanda.SLA_dias": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "SLA_Dias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SLA dias": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SLA_Dias": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dias": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "SLA em Dias": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "f_demanda.categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "Categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_demanda.ID_demanda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "ID_Demanda"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID demanda": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_Demanda": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification demanda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity demanda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier demanda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential demanda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "f_demanda.titulo_demanda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "TituloDemanda"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titulo demanda": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TituloDemanda": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_demanda.area": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "Area"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "area": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "neighbourhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "neighborhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Área": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "f_demanda.tipo_demanda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "TipoDemanda"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo demanda": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TipoDemanda": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Tipo de Demanda": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "f_demanda.observacoe": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "Observacoes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "observacoe": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_demanda.ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "f_demanda.responsavel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fDemandas",
+			          "ConceptualProperty": "Responsavel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "responsavel": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Responsável": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dCalendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "d_calendario.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.mes_numero": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "MesNumero"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mes numero": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me numero": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "MesNumero": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.mes_nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "MesNome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mes nome": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me nome": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "MesNome": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.ano_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "AnoMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AnoMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.total_demandas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Total Demandas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total demandas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate demanda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall demanda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Total de Demandas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.demandas_concluidas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Demandas Concluidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "demandas concluidas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.demandas_em_aberto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Demandas em Aberto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "demandas em aberto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.lead_time_dias": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Lead Time (Dias)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lead time (dias)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "lead time": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "lead duration (dias)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "lead interval (dias)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "lead moment (dias)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "lead period (dias)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "lead timetable (dias)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Lead Time Médio (Dias)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.demandas_dentro_SLA": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Demandas Dentro SLA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "demandas dentro SLA": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cumprimento_SLA": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "% Cumprimento SLA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% cumprimento SLA": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage cumprimento sla": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct cumprimento sla": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.demandas_atrasadas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Demandas Atrasadas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "demandas atrasadas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.demandas_concluidas_periodo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Demandas Concluidas Periodo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "demandas concluidas periodo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "entity__medida_has_demandas_concluidas_periodo": {
+			      "Binding": {
+			        "ConceptualEntity": "_Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.demandas_concluidas_periodo": {
+			          "Target": {
+			            "Entity": "entity__medida.demandas_concluidas_periodo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.demandas_concluidas_periodo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_demandas_concluidas_periodo"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_entity__medida_demandas_atrasadas": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "entity__medida.demandas_atrasadas": {
+			          "Target": {
+			            "Entity": "entity__medida.demandas_atrasadas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.demandas_atrasadas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_demandas_atrasadas"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_entity__medida_cumprimento_SLA": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "entity__medida.cumprimento_SLA": {
+			          "Target": {
+			            "Entity": "entity__medida.cumprimento_SLA"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cumprimento_SLA"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have__cumprimento_SLA"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_entity__medida_demandas_dentro_SLA": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "entity__medida.demandas_dentro_SLA": {
+			          "Target": {
+			            "Entity": "entity__medida.demandas_dentro_SLA"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.demandas_dentro_SLA"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_demandas_dentro_SLA"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_lead_time_dias": {
+			      "Binding": {
+			        "ConceptualEntity": "_Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.lead_time_dias": {
+			          "Target": {
+			            "Entity": "entity__medida.lead_time_dias"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.lead_time_dias"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_lead_time_dias"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_entity__medida_demandas_em_aberto": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "entity__medida.demandas_em_aberto": {
+			          "Target": {
+			            "Entity": "entity__medida.demandas_em_aberto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.demandas_em_aberto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_demandas_em_aberto"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_entity__medida_demandas_concluidas": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "entity__medida.demandas_concluidas": {
+			          "Target": {
+			            "Entity": "entity__medida.demandas_concluidas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.demandas_concluidas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_demandas_concluidas"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_entity__medida_total_demandas": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "entity__medida.total_demandas": {
+			          "Target": {
+			            "Entity": "entity__medida.total_demandas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.total_demandas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_total_demandas"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_ano_me": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.ano_me": {
+			          "Target": {
+			            "Entity": "d_calendario.ano_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.ano_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_ano_me"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_mes_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.mes_nome": {
+			          "Target": {
+			            "Entity": "d_calendario.mes_nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.mes_nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_mes_nome"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_mes_numero": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.mes_numero": {
+			          "Target": {
+			            "Entity": "d_calendario.mes_numero"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.mes_numero"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_mes_numeros"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.ano": {
+			          "Target": {
+			            "Entity": "d_calendario.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_anos"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.date": {
+			          "Target": {
+			            "Entity": "d_calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_dates"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_responsavel": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.responsavel": {
+			          "Target": {
+			            "Entity": "f_demanda.responsavel"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.responsavel"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_responsavels"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.ID": {
+			          "Target": {
+			            "Entity": "f_demanda.ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Name": {
+			              "Role": "f_demanda.ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ID_are_names_IDs_of_f_demandas"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_observacoe": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.observacoe": {
+			          "Target": {
+			            "Entity": "f_demanda.observacoe"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.observacoe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_observacoes"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_tipo_demanda": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.tipo_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda.tipo_demanda"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.tipo_demanda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_tipo_demandas"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_area": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.area": {
+			          "Target": {
+			            "Entity": "f_demanda.area"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_areas"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_titulo_demanda": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.titulo_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda.titulo_demanda"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.titulo_demanda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_titulo_demandas"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_ID_demanda": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.ID_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda.ID_demanda"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.ID_demanda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_ID_demandas"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.categoria": {
+			          "Target": {
+			            "Entity": "f_demanda.categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_categorias"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_SLA_dias": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.SLA_dias": {
+			          "Target": {
+			            "Entity": "f_demanda.SLA_dias"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.SLA_dias"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_SLA_dias"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_prioridade": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.prioridade": {
+			          "Target": {
+			            "Entity": "f_demanda.prioridade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.prioridade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_prioridades"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_status": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.status": {
+			          "Target": {
+			            "Entity": "f_demanda.status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_statuses"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_data_conclusao": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.data_conclusao": {
+			          "Target": {
+			            "Entity": "f_demanda.data_conclusao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.data_conclusao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_data_conclusaos"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_data_abertura": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.data_abertura": {
+			          "Target": {
+			            "Entity": "f_demanda.data_abertura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.data_abertura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_data_aberturas"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_descricao_demanda": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.descricao_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda.descricao_demanda"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "f_demanda.descricao_demanda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_descricao_demandas"
+			        }
+			      ]
+			    },
+			    "f_demanda_in_area": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "f_demanda.area": {
+			          "Target": {
+			            "Entity": "f_demanda.area"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "f_demanda.area"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "f_demanda.area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_are_in_areas"
+			        }
+			      ]
+			    },
+			    "f_demanda_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "fDemandas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_demanda": {
+			          "Target": {
+			            "Entity": "f_demanda"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_demanda"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_demandas_have_d_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "f_demanda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_f_demandas"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+
