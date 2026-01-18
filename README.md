@@ -100,7 +100,7 @@ O dashboard foi estruturado com foco em:
 
 - Destaque visual para desvios de prazo
 
-📷 Imagens do dashboard podem ser encontradas na pasta docs/imagens.
+📷 Imagens do dashboard podem ser encontradas na pasta /imagens.
 
 ---
 
@@ -147,8 +147,9 @@ O relatório responde às seguintes perguntas de negócio:
 ## 👤 Autor
 
 Maurício Barros
+
 Analista de Dados | BI | Power BI | SQL | IA Generativa
 
 🔗 GitHub: https://github.com/opusvix
 
-🔗 LinkedIn: [(inserir link)](https://www.linkedin.com/in/mauriciodasilvabarros/)
+🔗 LinkedIn: [(https://www.linkedin.com/in/mauriciodasilvabarros/)]
