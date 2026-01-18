@@ -1,153 +1,154 @@
-# 📊 Gestão de Demandas & SLA – Power BI + SharePoint
+## 📊 Gestão de Demandas & SLA — Power BI + SharePoint
 
-![Visão Geral](imagens/visao-geral.png)
-![SLA & Eficiência](imagens/sla-eficiencia.png)
-![Backlog & Produtividade](imagens/backlog-produtividade.png)
+Projeto de Business Intelligence desenvolvido com foco em governança de dados, análise de SLAs e visualização estratégica, utilizando SharePoint como fonte de dados e Power BI (PBIP) como camada analítica.
 
 ---
 
-## 🧩 Contexto
+## 🎯 Objetivo do Projeto
 
-A gestão eficiente de demandas é essencial para garantir **cumprimento de prazos (SLA)**, **produtividade das equipes** e **transparência operacional**. Neste projeto, foi desenvolvido um **dashboard analítico em Power BI** utilizando uma **lista do SharePoint Online como fonte de dados**, simulando um cenário real de controle de demandas corporativas.
+Demonstrar, na prática, a construção de uma solução de BI completa, contemplando:
 
-O projeto foi pensado desde a origem como **case de portfólio**, adotando boas práticas de modelagem, DAX, organização em PBIP e versionamento com GitHub.
-
----
-
-## 🎯 Problema de Negócio
-
-* Como acompanhar o volume de demandas ao longo do tempo?
-* O SLA está sendo cumprido?
-* Onde estão os gargalos operacionais?
-* Qual o nível de produtividade da equipe?
+- Integração com SharePoint Lists
+- Modelagem analítica limpa e escalável
+- Criação de KPIs de SLA e gestão de demandas
+- Uso do formato PBIP para versionamento em Git
+- Organização voltada a portfólio profissional
 
 ---
 
-## 💡 Solução Proposta
+## 🧱 Arquitetura da Solução
 
-Construção de um **pipeline simples e robusto**:
-
-**SharePoint Online → Power BI (PBIP) → Dashboard Analítico**
-
-Com:
-
-* Lista SharePoint como **tabela fato**
-* Tabela calendário dedicada
-* Medidas DAX para SLA, backlog e produtividade
-* Dashboard com storytelling em 3 páginas
-
----
-
-## 🏗️ Arquitetura da Solução
-
-1. **SharePoint Online**
-
-   * Lista `fDemandas`
-   * Registro de demandas, prazos, status e responsáveis
-
-2. **Power BI Desktop**
-
-   * Projeto no formato **PBIP (.pbip / .pbir)**
-   * Power Query para limpeza e padronização
-   * Modelo estrela
-
-3. **GitHub**
-
-   * Versionamento do projeto
-   * Documentação técnica e analítica
+- **SharePoint Online**
+  - Lista `fDemandas`
+- **Power BI – Power Query**
+  - Extração, limpeza e tratamento
+- **Modelo Dimensional**
+  - Tabela fato + calendário
+- **Medidas DAX**
+  - Organizadas por pastas
+- **Dashboard Executivo**
 
 ---
 
-## 🧠 Modelo de Dados
+## 🗂️ Estrutura do Repositório
 
-* **fDemandas** (tabela fato)
+gestao-demandas-sla-powerbi/
 
-  * Datas de abertura e conclusão
-  * SLA em dias
-  * Status, prioridade, categoria e responsável
+├── GestaoDemandas.pbip/
 
-* **dCalendario**
+├── Report/
 
-  * Ano, mês, Ano-Mês
-  * Relacionamento 1:* com fDemandas
+└── SemanticModel/
 
-> O modelo foi construído seguindo boas práticas de BI, com uso de relacionamento ativo e inativo para análises temporais distintas.
+├── docs/
 
----
+├── imagens/
 
-## 📈 Dashboard
+└── storytelling.md
 
-### 📄 Página 1 – Visão Geral
+├── README.md
 
-* Total de demandas
-* Demandas em aberto
-* % de cumprimento de SLA
-* Lead Time médio
-* Evolução mensal de demandas concluídas
-
-### 📄 Página 2 – SLA & Eficiência
-
-* Cumprimento de SLA por prioridade
-* Demandas atrasadas
-* Lead time por categoria
-
-### 📄 Página 3 – Backlog & Produtividade
-
-* Backlog por status e categoria
-* Demandas concluídas por responsável
-* Tabela detalhada com formatação condicional
+└── .gitignore
 
 ---
 
-## 📐 Principais Métricas (DAX)
+## 📐 Modelagem de Dados
 
-* Total de Demandas
-* Demandas Concluídas
-* Demandas em Aberto
-* Lead Time Médio (Dias)
-* % Cumprimento de SLA
-* Demandas Atrasadas
+- Tabela Fato: fDemandas
 
-As medidas foram organizadas em **pastas lógicas**, facilitando manutenção e leitura do modelo.
+- Dimensão Tempo: Calendario
+
+- Modelo em estrela
+
+- Relacionamentos unidirecionais
+
+- Granularidade: demanda individual
+
+📌 Colunas técnicas do SharePoint foram descartadas, mantendo apenas atributos analíticos.
+
+---
+
+## 📏 Indicadores (KPIs)
+
+- Total de Demandas
+
+- Demandas no Prazo
+
+- Demandas Fora do Prazo
+
+- SLA (%)
+
+- Tempo Médio de Atendimento
+
+- Demandas por Status
+
+- Demandas por Responsável
+
+As medidas DAX estão organizadas em pastas, seguindo as etapas do projeto.
+
+---
+
+## 📊 Dashboard
+
+O dashboard foi estruturado com foco em:
+
+- Visão executiva
+
+- Clareza na leitura de SLAs
+
+- Comparação entre demandas concluídas e pendentes
+
+- Destaque visual para desvios de prazo
+
+📷 Imagens do dashboard podem ser encontradas na pasta docs/imagens.
+
+---
+
+## 🧠 Storytelling Analítico
+
+O relatório responde às seguintes perguntas de negócio:
+
+- Estamos cumprindo os SLAs acordados?
+
+- Onde estão os maiores gargalos?
+
+- Quais demandas impactam negativamente o SLA?
+
+- Como evolui o desempenho ao longo do tempo?
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* Power BI Desktop
-* Power BI Project (PBIP / PBIR)
-* SharePoint Online Lists
-* DAX
-* Power Query (M)
-* GitHub
-* VS Code
+- Power BI Desktop (PBIP)
+
+- SharePoint Online
+
+- DAX
+
+- Power Query (M)
+
+- Git & GitHub
 
 ---
 
-## ▶️ Como Reproduzir o Projeto
+## 🚀 Diferenciais do Projeto
 
-1. Clone este repositório
-2. Abra a pasta `powerbi/`
-3. Abra o arquivo `GestaoDemandas.pbip`
-4. Ajuste a URL do SharePoint para seu ambiente
-5. Atualize os dados
+- Uso de PBIP (pronto para versionamento)
 
----
+- Organização profissional de medidas
 
-## 🚀 Aprendizados Demonstrados
+- Separação clara entre modelo, visual e documentação
 
-* Integração Power BI + SharePoint
-* Modelagem de dados profissional
-* Criação de KPIs de SLA
-* Storytelling analítico
-* Organização de projetos para portfólio
+- Projeto pensado como case real de BI corporativo
 
 ---
 
 ## 👤 Autor
 
-**Maurício Barros**
+Maurício Barros
+Analista de Dados | BI | Power BI | SQL | IA Generativa
 
-Analista de Dados | BI | Power BI | Data Analytics
+🔗 GitHub: https://github.com/opusvix
 
-🔗 GitHub: [https://github.com/opusvix](https://github.com/opusvix)
+🔗 LinkedIn: [(inserir link)](https://www.linkedin.com/in/mauriciodasilvabarros/)
