@@ -320,20 +320,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "5fdd1c3eeeeea36903ba",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Demandas Concluidas Periodo"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
